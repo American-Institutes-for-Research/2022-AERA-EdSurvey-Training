@@ -2,7 +2,7 @@
 
 Greetings! 
 
-Thank you for registering for our AERA course on Analyzing Large-scale Assessment Data Using R. We are looking forward to meeting every one of you through the zoom meeting.  
+Thank you for registering for our AERA course on **Analyzing NAEP and TIMSS Data Using R**. We are looking forward to meeting every one of you through the zoom webinar.  
 
 Before the class, please install: 
 
