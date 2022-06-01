@@ -49,24 +49,17 @@ kable(es2$data, format="html") %>%
 ############################################### Slide 19	
 ############################################### Slide 20	
 ############################################### Slide 21	
-library(EdSurvey)	
-sdf <- readNAEP(system.file("extdata/data", "M36NT2PM.dat", 	
-                            package="NAEPprimer"))	
-	
-downloadTIMSS(years = c(2019), root = "C:/")	
-	
-TIMSS19<- readTIMSS(paste0(edsurveyHome, "TIMSS/2019"), 	
-                    countries = c("usa"), gradeLvl = "4")	
+library(EdSurvey)
+sdf <- readNAEP(system.file("extdata/data", "M36NT2PM.dat", 
+                            package="NAEPprimer"))
+
+# store the data in this folder, you may want to update this
+downloadTIMSS(years = c(2019), root = "~/")
+
+TIMSS19 <- readTIMSS("~/TIMSS/2019", 
+                     countries = c("usa"), gradeLvl = "4")
 	
 ############################################### Slide 22	
-library(EdSurvey)	
-sdf <- readNAEP(system.file("extdata/data", "M36NT2PM.dat", 	
-                            package="NAEPprimer"))	
-edsurveyHome <- "~/"	
-	
-TIMSS19<- readTIMSS(paste0(edsurveyHome, "TIMSS/2019"), 	
-                    countries = c("usa"), gradeLvl = "4")	
-	
 showCutPoints(sdf)	
 showCutPoints(TIMSS19)	
 ############################################### Slide 23	
@@ -183,12 +176,6 @@ TIMSS11<- readTIMSS("~/TIMSS/2011",
 TIMSS15<- readTIMSS("~/TIMSS/2015", 	
                     countries = c("usa"), gradeLvl = "4")	
 TIMSS19<- readTIMSS("~/TIMSS/2019", 	
-                    countries = c("usa"), gradeLvl = "4")	
-TIMSS11<- readTIMSS(paste0(edsurveyHome, "TIMSS/2011"), 	
-                    countries = c("usa"), gradeLvl = "4")	
-TIMSS15<- readTIMSS(paste0(edsurveyHome, "TIMSS/2015"), 	
-                    countries = c("usa"), gradeLvl = "4")	
-TIMSS19<- readTIMSS(paste0(edsurveyHome, "TIMSS/2019"), 	
                     countries = c("usa"), gradeLvl = "4")	
 ############################################### Slide 60	
 trend <- edsurvey.data.frame.list(list(TIMSS19, TIMSS15, TIMSS11))	
