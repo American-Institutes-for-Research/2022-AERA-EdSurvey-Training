@@ -14,6 +14,9 @@ To initialize your system, open RStudio and run the following script:
 ```
 install.packages("EdSurvey")
 library(EdSurvey)
+```
+To practice the achievement levels and gap sections with TIMSS datasets, download the datasets using the following script, once EdSurvey is successfully installed.
+```
 downloadTIMSS(years = c(2011, 2015, 2019), root = "~/")
 ```
 Note: you may need to change the `root` argument depending on your system. Downloading the data files may take several hours to complete.
