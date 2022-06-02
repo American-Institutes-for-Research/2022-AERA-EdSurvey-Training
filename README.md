@@ -21,7 +21,7 @@ downloadTIMSS(years = c(2011, 2015, 2019), root = "~/")
 ```
 Note: you may need to change the `root` argument depending on your system. Downloading the data files may take several hours to complete.
 
-In addition, you can access and download all handouts through this [GitHub repo](https://github.com/American-Institutes-for-Research/2022-AERA-EdSurvey-Training). It contains the course agenda, presentation slides, R code scripts, and a course reading list. 
+In addition, you can access and download all handouts through this [GitHub repo](https://github.com/American-Institutes-for-Research/2022-AERA-EdSurvey-Training). It contains the course agenda, presentation slides, and R code scripts. 
 
 To help keep the course running smoothly please use the Q&A tool in the Zoom Webinar platform if you have any questions for this course. 
 
