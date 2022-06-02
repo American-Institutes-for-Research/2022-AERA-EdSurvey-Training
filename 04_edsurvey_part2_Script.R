@@ -170,7 +170,7 @@ mathGap3 <- gap(variable = "composite", data = sdf,
 mathGap3$results	
 ############################################### Slide 58	
 ############################################### Slide 59	
-downloadTIMSS(year=c(2015, 2011), root = "~/")	
+downloadTIMSS(year=c(2019, 2015, 2011), root = "~/")	
 TIMSS11<- readTIMSS("~/TIMSS/2011", 	
                     countries = c("usa"), gradeLvl = "4")	
 TIMSS15<- readTIMSS("~/TIMSS/2015", 	
@@ -204,9 +204,6 @@ help(package = "EdSurvey")
 searchSDF("text", sdf)	
 levelsSDF("myvar", sdf)	
 ############################################### Slide 67	
-TIMSS19USA<- readTIMSS(paste0(edsurveyHome, "TIMSS/2019"), countries = c("usa"), gradeLvl = "4")	
-TIMSS19FIN<- readTIMSS(paste0(edsurveyHome, "TIMSS/2019"), countries = c("fin"), gradeLvl = "4")	
-TIMSS19HKG<- readTIMSS(paste0(edsurveyHome, "TIMSS/2019"), countries = c("hkg"), gradeLvl = "4")	
 TIMSS19USA<- readTIMSS(path = "C:/TIMSS/2019/", countries = c("usa"), gradeLvl = "4")	
 TIMSS19FIN<- readTIMSS(path = "C:/TIMSS/2019/", countries = c("fin"), gradeLvl = "4")	
 TIMSS19HKG<- readTIMSS(path = "C:/TIMSS/2019/", countries = c("hkg"), gradeLvl = "4")	
